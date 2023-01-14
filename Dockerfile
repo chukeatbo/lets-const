@@ -57,7 +57,7 @@ FROM node:18-alpine As production
 COPY --chown=node:node --from=build /usr/src/app/node_modules ./node_modules
 COPY --chown=node:node --from=build /usr/src/app/dist ./dist
 
-# RUN npm run migration:run && npm run seed:run
+RUN npm run migration:run && npm run seed:run
 
 # Start the server using the production build
 CMD [ "node", "dist/main.js" ]
