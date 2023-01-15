@@ -54,6 +54,11 @@ env:
   PROJECT_ID: lets-const # TODO: update Google Cloud project id
   SERVICE: lets-const # TODO: update Cloud Run service name
   REGION: asia-southeast1 # TODO: update Cloud Run service region
+  DB_HOST: 35.187.240.60
+  DB_PORT: 5432
+  DB_USER: chukeat_bo
+  DB_PASS: Zt_I~zc:mQl7<iN2
+  DB_NAME: lets-const
 
 jobs:
   deploy:
